@@ -1,0 +1,56 @@
+body {
+  background: #f7f7f7;
+  padding-top: 44px;
+}
+
+.index_header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 44px;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  background: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+.index_header .index_scan,
+.index_header .index_car {
+  width: 50px;
+}
+.index_header .index_scan a,
+.index_header .index_car a {
+  height: 100%;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -webkit-align-items: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.index_header .index_scan a img,
+.index_header .index_car a img {
+  width: 18px;
+  display: block;
+  height: 18px;
+  margin: 0 auto;
+}
+.index_header .index_search {
+  -webkit-box-flex: 1;
+  -webkit-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+}
+.index_header .index_car {
+  width: 50px;
+}
+
+.index_section .swiper-container .index_wrapper_img img {
+  display: block;
+  height: 152px;
+  width: 100%;
+}

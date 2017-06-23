@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/reset.css"/>
+		<link rel="stylesheet" type="text/css" href="css/swiper.min.css"/>
+		<link rel="stylesheet" type="text/css" href="css/new_file.css"/>
+	</head>
+	<body>
+		<header class="index_header">
+			<figure class="index_scan">
+				<a href="">
+					<img src="img/saomiao@2x.png"/>
+				</a>
+			</figure>
+			<figure class="index_search">
+				<img src="img/fangdajing_soushuo.png" /><span>搜说</span>
+			</figure>
+			<figure class="index_car">
+				<a href="">
+					<img src="img/gouwuche@2x.png"/>
+				</a>
+			</figure>
+		</header>
+		<section class="index_section">
+			<div class="swiper-container">
+				<div class="swiper-wrapper index_wrapper_box">
+					
+				</div>
+  				<div class="swiper-pagination"></div>
+			</div>
+		</section>
+		<script src="js/jquery-2.2.4.min.js"></script>
+		<script src="js/swiper.min.js"></script>
+		<script src="js/artTemplate.js"></script>
+		<script type="text/html" id="temp_wrapper">
+			{{each list  v i}}
+				<div class="swiper-slide index_wrapper_img">
+					<img src="{{v.img}}"/>
+				</div>
+			{{/each}}
+		</script>
+		<script src="js/index.js"></script>
+		<!--<script src="js/artTemplate.js"></script>
+		<script type="text/html" id="temp1">
+			{{each xxx as v i}}
+			<div class="swiper-slide index_wrapper_img">
+				<img src="{{v.imgx}}"/>
+				<p>{{v.name}}</p>
+				<p>{{v.font}}</p>
+			</div>
+			{{/each}}
+		</script>
+		-->
+		<script>
+		
+//		$.ajax({
+//			success: function(data){
+//				var data = [
+//					{
+//						imgx: "img/banner_05.png",
+//						name: "banner5",
+//						font: "啊速度回家看撒好的空间"
+//					},
+//					{
+//						imgx: "img/banner_06.png",
+//						name: "banner6",
+//						font: "啊速度回家看撒好的空间"
+//					},
+//					{
+//						imgx: "img/banner_06.png",
+//						name: "banner6",
+//						font: "啊速度回家看撒好的空间"3
+//					}
+//				]
+//				var str = template("temp1", {xxx: data});
+//				console.log(str);
+//			}
+//		})
+			
+		</script>
+		
+	</body>
+</html>
